@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>G&R Dev</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.JPG" alt="Logo de la empresa">
+                <h2>G&R Dev</h2>
+            </div>
+            <div class="carrito">
+                <ul>
+                    <li class="submenu">
+                     <img src="img/Captura.JPG" alt="Carrito de compras">
+                     <div id="lista-productos">
+                        <p>Carrito Vacio</p>
+                         <table id="table">
+                             <thead>
+                                 <tr>
+                                     <th>Imagen</th>
+                                     <th>Nombre</th>
+                                     <th>Precio</th>
+                                     <th></th>
+                                 </tr>
+                             </thead>
+                             <tbody id="list-curso">
+                                 <!-- <tr>
+                                     <td>
+                                         <img src="img/curso1.jpg" width=100>
+                                     </td>
+                                     <td>HTML5 CSS3 JavaScript</td>
+                                     <td>$15</td>
+                                     <td><a href="#" class="borrar-curso"> X</a></td>
+                                 </tr>
+                                 <tr>
+                                     <td>
+                                         <img src="img/curso3.jpg" width=100>
+                                     </td>
+                                     <td>Guitarra para Principiantes</td>
+                                     <td>$15</td>
+                                     <td><a href="#" class="borrar-curso"> X</a></td>
+                                 </tr> -->
+                             </tbody>
+                         </table>
+                         <a href="#" class="button" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                     </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="row">
+            <div class="campo">
+                <h1>Aprende algo nuevo</h1>
+                <small>Todo los cursos a $15</small>
+                <form action="" class="formulario">
+                    <input type="text" name="buscar" class="buscar" placeholder="¿Que te gustaria Aprender?">
+                    <input type="submit" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="barra">
+        <div class="contenido">
+            <div class="column">
+                <img src="img/icono1.png" alt="Primer Icon">
+                <p>20,000 Cursos en línea
+                    <br>
+                    Explora los temas más recientes</p>
+            </div>
+            <div class="column">
+                <img src="img/icono2.png" alt="Primer Icon">
+                <p>Instructores Expertos
+                    <br>
+                    Aprende con distintos estilos</p>
+            </div>
+            <div class="column">
+                <img src="img/icono3.png" alt="Primer Icon">
+                <p>Acceso de por vida
+                    <br>
+                    Aprende a tu ritmo</p>
+            </div>
+          
+        </div>
+    </div>
+
+    <section class="main">
+        <h1>Cursos en linea</h1>
+        <div class="cursos" id="cursos">
+            <div class="curso">
+                <img src="img/curso1.jpg" alt="JavaScript">
+                <div class="info">
+                    <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+                    <p>Avimael Gervacio</p>
+                    <img src="img/estrellas.png" alt="JavaScript">
+                    <div class="precio">
+                        <p>$20</p>
+                        <span>$10</span>
+                    </div>
+                    <a class="agregarCarrito boton" data-id="1"  id="btn" value="">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="img/curso2.jpg" alt="JavaScript">
+                <div class="info">
+                    <h4>Curso de Comida Vegetariana</h4>
+                    <p>Avimael Gervacio</p>
+                    <img src="img/estrellas.png" alt="JavaScript">
+                    <div class="precio">
+                        <p>$20</p>
+                        <span>$10</span>
+                    </div>
+                   <a class="agregarCarrito boton" data-id="2"  id="btn" value="">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="img/curso3.jpg" alt="JavaScript">
+                <div class="info">
+                    <h4>Guitarra para Principiantes</h4>
+                    <p>Avimael Gervacio</p>
+                    <img src="img/estrellas.png" alt="JavaScript">
+                    <div class="precio">
+                        <p>$20</p>
+                        <span>$10</span>
+                    </div>
+                     <a class="agregarCarrito boton" data-id="3" id="btn" value="">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="img/curso4.jpg" alt="JavaScript">
+                <div class="info">
+                    <h4>Huerto en tu casa</h4>
+                    <p>Avimael Gervacio</p>
+                    <img src="img/estrellas.png" alt="JavaScript">
+                    <div class="precio">
+                        <p>$20</p>
+                        <span>$10</span>
+                    </div>
+                    <a class="agregarCarrito boton" data-id="4" id="btn" value="">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="img/curso5.jpg" alt="JavaScript">
+                <div class="info">
+                    <h4>Decoración con productos de tu hogar</h4>
+                    <p>Avimael Gervacio</p>
+                    <img src="img/estrellas.png" alt="JavaScript">
+                    <div class="precio">
+                        <p>$20</p>
+                        <span>$10</span>
+                    </div>
+                    <a class="agregarCarrito boton" data-id="5" id="btn" value="">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="curso">
+                <img src="img/curso1.jpg" alt="JavaScript">
+                <div class="info">
+                    <h4>Diseño Web para Principiantes</h4>
+                    <p>Avimael Gervacio</p>
+                    <img src="img/estrellas.png" alt="JavaScript">
+                    <div class="precio">
+                        <p>$20</p>
+                        <span>$10</span>
+                    </div>
+                    <a class="agregarCarrito boton" data-id="6" id="btn" value="">Agregar al carrito</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <div class="columnas">
+                <div class="column">
+                    <nav class="menu-principal">
+                        <a href="" class="enlace">Para tu negocio</a>
+                        <a href="" class="enlace">Conviertete en instructor</a>
+                        <a href="" class="enlace">Aplicaciones Moviles</a>
+                        <a href="" class="enlace">Soporte</a>
+                        <a href="" class="enlace">Temas</a>
+                    </nav>
+                </div>
+    
+                <div class="column">
+                    <nav class="menu-principal">
+                        <a href="" class="enlace">¿Quienes somos?</a>
+                        <a href="" class="enlace">Empleo</a>
+                        <a href="" class="enlace">Blog</a>
+                    </nav>
+                </div>
+
+                <div class="column">
+                    <div class="redes">
+                        <a href="" class="facebook"><i class="fab fa-facebook-square"></i> </a>
+                        <a href="" class="twitter"><i class="fab fa-twitter"></i> </a>
+                        <a href="" class="linkedin"><i class="fab fa-linkedin"></i> </a>
+                        <a href="" class="youtube"><i class="fab fa-youtube"></i> </a>
+                        <a href="" class="instagram"><i class="fab fa-instagram"></i> </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/app-min.js"></script>
+</body>
+</html>

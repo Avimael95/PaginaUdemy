@@ -1,0 +1,407 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #fff6f6;
+}
+
+header {
+  background-color: #212429;
+  padding: 10px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header .container .logo h2 {
+  color: #ffffff;
+  text-align: right;
+  font-size: 30px;
+}
+header .container .carrito ul {
+  list-style: none;
+}
+header .container .carrito ul .submenu {
+  position: relative;
+}
+header .container .carrito ul .submenu img {
+  vertical-align: top;
+}
+header .container .carrito ul .submenu #lista-productos {
+  display: none;
+  background-color: #212429;
+  border-radius: 5px;
+}
+header .container .carrito ul .submenu #lista-productos p {
+  display: block;
+  background-color: #d14545;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+}
+header .container .carrito ul .submenu #lista-productos table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header .container .carrito ul .submenu #lista-productos th, header .container .carrito ul .submenu #lista-productos td {
+  border-bottom: 1px solid #E1E1E1;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ffffff;
+}
+header .container .carrito ul .submenu #lista-productos .borrar-curso {
+  background-color: #e92f2f;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 11px;
+}
+header .container .carrito ul .submenu #lista-productos .button {
+  display: inline-block;
+  margin: 0 auto;
+  height: 38px;
+  width: 100%;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+}
+header .container .carrito ul .submenu:hover #lista-productos {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: #212429;
+  padding: 20px;
+}
+@media (min-width: 600px) {
+  header .container {
+    flex-direction: row;
+    width: 90%;
+  }
+  header .container .logo {
+    width: 33.3%;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  header .container .logo h2 {
+    font-size: 30px;
+  }
+  header .container .carrito {
+    width: 33.3%;
+  }
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  height: 350px;
+}
+.hero .row {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.hero .row .campo {
+  margin: 50px auto;
+}
+.hero .row .campo h1 {
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.1rem;
+}
+.hero .row .campo small {
+  color: #ffffff;
+}
+.hero .row .campo .formulario {
+  margin-top: 20px;
+  position: relative;
+}
+.hero .row .campo .formulario input[type=text] {
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+}
+.hero .row .campo .formulario .boton {
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.hero .row .campo .formulario .buscar {
+  height: 50px;
+  margin-bottom: 0;
+  width: 100%;
+}
+.hero .row .campo .formulario .btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  background-image: url(../img/lupa.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: none;
+}
+@media (min-width: 600px) {
+  .hero .row {
+    padding: 50px;
+    width: 100%;
+  }
+  .hero .row .campo {
+    margin: 50px;
+    width: 50%;
+  }
+  .hero .row .campo h2 {
+    font-size: 25px;
+  }
+}
+
+.barra {
+  padding: 20px;
+  background: #741d51;
+  background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
+  background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+  margin-bottom: 20px;
+}
+.barra .contenido {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.barra .contenido .column {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+.barra .contenido .column img {
+  height: 40px;
+}
+.barra .contenido .column p {
+  padding-left: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (min-width: 600px) {
+  .barra .contenido {
+    flex-direction: row;
+    width: 70%;
+  }
+  .barra .contenido .column {
+    width: 30%;
+    justify-content: space-around;
+    margin-bottom: 0px;
+  }
+}
+
+.main h1 {
+  text-align: center;
+}
+.main .cursos {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main .cursos .curso {
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+.main .cursos .curso img {
+  width: 100%;
+}
+.main .cursos .curso .info {
+  margin: 0px 10px;
+  padding: 4px 20px;
+}
+.main .cursos .curso .info h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.main .cursos .curso .info p {
+  font-size: 15px;
+}
+.main .cursos .curso .info img {
+  width: 100px;
+}
+.main .cursos .curso .info .precio {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.main .cursos .curso .info .precio p {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.main .cursos .curso .info .precio span {
+  font-weight: 700;
+}
+.main .cursos .curso .info .boton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid #33C3F0;
+  border-radius: 4px;
+  background-color: #33C3F0;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.main .cursos .curso .info .boton:hover {
+  color: #fff;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+@media (min-width: 600px) {
+  .main .cursos {
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .main .cursos .curso {
+    width: 31.5%;
+  }
+}
+
+footer {
+  background-color: #212429;
+}
+footer .contenedor {
+  width: 100%;
+  margin: 0 auto;
+}
+footer .contenedor .columnas {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+footer .contenedor .columnas .column {
+  width: 100%;
+  border-bottom: 1px solid #555;
+  margin-bottom: 10px;
+}
+footer .contenedor .columnas .column .menu-principal {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .contenedor .columnas .column .menu-principal .enlace {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+footer .contenedor .columnas .column .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+footer .contenedor .columnas .column .redes a {
+  color: #ffffff;
+  width: 100px;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 3px;
+  font-size: 30px;
+  margin: 0px 10px;
+}
+footer .contenedor .columnas .column .redes .facebook:hover {
+  background-color: #3b5998;
+}
+footer .contenedor .columnas .column .redes .twitter:hover {
+  background-color: #1da1f2;
+}
+footer .contenedor .columnas .column .redes .linkedin:hover {
+  background-color: #00a0dc;
+}
+footer .contenedor .columnas .column .redes .youtube:hover {
+  background-color: #ff0000;
+}
+footer .contenedor .columnas .column .redes .instagram:hover {
+  background-color: #f77737;
+}
+@media (min-width: 600px) {
+  footer .contenedor {
+    width: 90%;
+  }
+  footer .contenedor .columnas {
+    flex-direction: row;
+  }
+  footer .contenedor .columnas .column {
+    width: 35%;
+    border-bottom: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
